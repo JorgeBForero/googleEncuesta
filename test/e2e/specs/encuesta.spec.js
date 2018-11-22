@@ -8,7 +8,7 @@ const results = [
     [1, 2, 3, 4],
     [1, 2],
     [1, 2, 3],
-    [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]],
+    [1, 2, 3, 4],
     [1, 2, 3, 4],
     [1, 2, 3, 4],
     [1, 2, 3, 4],
@@ -18,7 +18,7 @@ const results = [
     [1, 2, 3],
     [1, 2, 3, 4, 5, 6],
     [1, 2, 3, 4],
-    [1, 2, 3, 4],
+    [1, 2, 3],
     [1, 2, 3],
     [1, 2, 3],
 ];
@@ -35,10 +35,12 @@ describe('Encuesta', () => {
     // });
 
     describe('Create', () => {
-
+        // for (let i = 0; i < 100; i++) {
+        //
+        // }
         it('Should create a encuesta', () => {
             results.forEach((info, index) => {
-                if (index + 1 !== 2 && index + 1 !== 8) {
+                if (index + 1 !== 2 ) {
                     const pregunta = index + 1;
                     const option = info[Math.floor(Math.random() * info.length)];
                     // console.log(pregunta);
@@ -58,7 +60,7 @@ describe('Encuesta', () => {
                 // }
 
             });
-            browser.pause(2000);
+            // browser.pause(2000);
             encuesta.clickEnviar();
             browser.pause(2000);
         });
