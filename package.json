@@ -1,0 +1,39 @@
+{
+  "name": "encuesta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio ./wdio.conf.js"
+  },
+  "pre-commit": {
+    "silent": true,
+    "run": [
+      "lint"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eslint-plugin-webdriverio": "^1.0.1",
+    "wdio-eslint-service": "0.0.3",
+    "webdriverio": "^4.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "",
+  "eslintIgnore": [
+    "/**/*.conf.js"
+  ]
+}
